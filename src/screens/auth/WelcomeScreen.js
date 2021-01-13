@@ -21,7 +21,7 @@ export default function WelcomeScreen({navigation}) {
             <View style={{ height: 20 }} />
             <View style={{ height: 20 }} />
             <View style={{ height: 20 }} />
-            <AppButton name="SIGNUP"> </AppButton>
+            <AppButton name="SIGNUP" onPress ={()=>{navigation.navigate('Register')}}> </AppButton>
             <View style={{ height: 20 }} />
             <AppLightButton name="LOGIN" />
           </View>

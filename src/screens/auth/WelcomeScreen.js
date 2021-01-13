@@ -2,9 +2,8 @@ import React from 'react'
 import { View, Text, StyleSheet, ImageBackground, Image } from 'react-native'
 import AppButton from '../../components/others/AppButton'
 import AppLightButton from '../../components/others/AppLightButton';
-import Screen from '../../components/Screen'
 
-export default function WelcomeScreen() {
+export default function WelcomeScreen({navigation}) {
     return (
       <ImageBackground
         style={styles.container}

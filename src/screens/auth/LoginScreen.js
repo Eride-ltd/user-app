@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-export default function RegisterScreen() {
+export default function LoginScreen() {
     return (
         <View>
             <Text></Text>

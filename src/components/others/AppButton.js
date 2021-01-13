@@ -1,19 +1,29 @@
 import React from 'react'
-import { View, Text, Touchable, TouchableOpacity } from 'react-native'
-// import { TouchableOpacity } from 'react-native-gesture-handler'
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
+import colors from '../../utilities/colors'
 
 export default function AppButton({name}) {
     return (
         <TouchableOpacity style={styles.buttonContainer}> 
-            <Text> {name}</Text>
+            <Text style ={styles.text}> {name}</Text>
        </TouchableOpacity>
     )
 }
 const styles = StyleSheet.create({
     text: {
-
+        textAlign: 'center',
+        // color: 'white',
+        fontSize: 14,
+        fontWeight: "700"
     },
     buttonContainer: {
-        
+        // paddingVertical: 20,
+        backgroundColor: colors.primary,
+        width: 260,
+        alignContent: 'center',
+        justifyContent: 'center',
+        height: 50,
+        borderRadius: 20,
+        marginVertical: 10
     },
 })

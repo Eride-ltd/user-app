@@ -6,6 +6,7 @@ import WelcomeScreen from '../screens/auth/WelcomeScreen';
 import RegisterScreen from "../screens/auth/RegisterScreen";
 import LoginScreen from '../screens/auth/LoginScreen';
 import EnterPhoneNumberScreen from '../screens/auth/EnterPhoneNumberScreen';
+import VerifyOTPScreen from '../screens/auth/VerifyOTPScreen';
 const Stack = createStackNavigator();
 export default function Navigation() {
     return (
@@ -38,6 +39,13 @@ export default function Navigation() {
             }}
             name="Phone"
             component={EnterPhoneNumberScreen}
+          />
+          <Stack.Screen
+            options={{
+              headerShown: false,
+            }}
+            name="Otp"
+            component={VerifyOTPScreen}
           />
         </Stack.Navigator>
       </NavigationContainer>

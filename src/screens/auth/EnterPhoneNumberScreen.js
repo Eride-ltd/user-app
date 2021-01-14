@@ -23,7 +23,7 @@ export default function EnterPhoneNumberScreen({ navigation }) {
         <View style={{ alignItems: "center", marginTop: 40 }}>
           <AppLightButton
             name="NEXT"
-            onPress={() => navigation.navigate("Phone")}
+                      onPress={() => { navigation.navigate("Otp") }}
           />
         </View>
       </View>

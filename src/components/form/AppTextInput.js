@@ -3,11 +3,11 @@ import { StyleSheet, Text, View } from 'react-native'
 import { TextInput } from 'react-native-gesture-handler'
 import colors from '../../utilities/colors'
 
-export default function AppTextInput({label, placeholder, name}) {
+export default function AppTextInput({label, placeholder, name, value}) {
     return (
         <View style={styles.container}>
             <Text style= {styles.label}> { label}</Text>
-            <TextInput style={styles.inputBox} autoCorrect ={false} autoCapitalize="none" placeholder={placeholder} />
+            <TextInput style={styles.inputBox} autoCorrect ={false} autoCapitalize="none" value = {value} placeholder={placeholder} />
         </View>
     )
 }
@@ -21,10 +21,10 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         width: '100%',
         height: 42,
-        fontSize: 14,
+        fontSize: 16,
         padding: 5,
     },
     label: {
-        fontSize: 15
+        fontSize: 18
     }
 })

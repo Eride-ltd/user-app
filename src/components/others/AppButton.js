@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 16,
     fontWeight: "700",
-    color: "#F7F7F3",
+    color: "white",
   },
   buttonContainer: {
     backgroundColor: colors.primary,

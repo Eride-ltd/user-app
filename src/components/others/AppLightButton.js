@@ -2,9 +2,9 @@ import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import colors from "../../utilities/colors";
 
-export default function AppLightButton({ name }) {
+export default function AppLightButton({ name, onPress }) {
   return (
-    <TouchableOpacity style={styles.buttonContainer}>
+    <TouchableOpacity style={styles.buttonContainer} onPress = {onPress}>
       <Text style={styles.text}> {name}</Text>
     </TouchableOpacity>
   );
